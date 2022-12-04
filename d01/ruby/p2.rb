@@ -1,7 +1,6 @@
-puts $stdin
-  .each_line
-  .slice_after("\n")
-  .map { |e| e.map(&:to_i).sum }
+require_relative "./p1"
+
+puts parse($stdin)
   .max(3)
   .sum
 

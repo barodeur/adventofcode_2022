@@ -1,14 +1,11 @@
 puts $stdin
   .each_line
-  .reject { |line| line == "\n" }
   .sum { |line|
     play, result = line.split(" ")
     play_idx = play.ord - "A".ord
     result_idx = result.ord - "Y".ord
 
     response_idx = (play_idx + result_idx + 3) % 3
-
-    pp [play_idx, result_idx, response_idx]
 
     response_score = response_idx + 1
     result_score =

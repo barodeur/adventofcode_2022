@@ -1,0 +1,4 @@
+(executables
+ (public_names aoc2022d01p1 aoc2022d01p2)
+ (names p1 p2)
+ (libraries aoc core))

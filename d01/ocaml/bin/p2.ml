@@ -1,10 +1,12 @@
 open Core
+open Aoc2022
 
 let () =
-  Aoc.run @@ fun seq ->
+  Aoc2022d01.run @@ fun seq ->
+  let open Sequence.Monad_infix in
   seq
-  |> Sequence.map ~f:(List.fold ~init:0 ~f:( + ))
+  >>| List.sum
   |> Sequence.to_list
   |> List.sort ~compare:(Fun.flip Int.compare)
   |> Fun.flip List.take 3
-  |> List.fold ~init:0 ~f:( + )
+  |> List.sum

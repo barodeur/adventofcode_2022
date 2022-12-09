@@ -1,11 +1,11 @@
 (lang dune 3.6)
 
-(name aoc2022d01)
+(name aoc2022)
 
 (generate_opam_files true)
 
 (package
- (name aoc2022d01)
+ (name aoc2022)
  (depends
   ocaml
   dune

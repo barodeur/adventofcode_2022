@@ -1,0 +1,9 @@
+(executables
+ (public_names aoc2022d07p1 aoc2022d07p2)
+ (names p1 p2)
+ (libraries aoc2022d07 core))
+
+(env
+ (dev
+   (flags (:standard -w -32)))
+  )

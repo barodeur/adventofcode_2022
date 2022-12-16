@@ -1,0 +1,4 @@
+(library
+ (name aoc2022d09)
+ (preprocess (pps ppx_let ppx_sexp_conv))
+ (libraries aoc2022 core re2))

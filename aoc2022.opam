@@ -3,8 +3,10 @@ opam-version: "2.0"
 depends: [
   "ocaml"
   "dune" {>= "3.6"}
-  "core" {>= "0.15.0" & < "0.16.0"}
-  "eio_main"
+  "core" {>= "v0.15.1" & < "v0.16.0"}
+  "ppx_sexp_conv" {>= "v0.15.1" & < "v0.16.0"}
+  "re2" {>= "v0.15.0" & < "v0.16.0"}
+  "eio_main" {= "0.7"}
   "odoc" {with-doc}
 ]
 build: [

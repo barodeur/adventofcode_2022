@@ -9,7 +9,9 @@
  (depends
   ocaml
   dune
-  (core (and (>= 0.15.0) (< 0.16.0)))
-  eio_main
+  (core (and (>= v0.15.1) (< v0.16.0)))
+  (ppx_sexp_conv (and (>= v0.15.1) (< v0.16.0)))
+  (re2 (and (>= v0.15.0) (< v0.16.0)))
+  (eio_main (= 0.7))
  ))
 

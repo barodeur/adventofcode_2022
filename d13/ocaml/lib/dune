@@ -1,0 +1,16 @@
+(menhir
+ (modules parser))
+
+(ocamllex lexer)
+
+(library
+ (name aoc2022d13_packet_parser)
+ (preprocess (pps ppx_sexp_conv))
+ (modules parser lexer packet lex_and_parse)
+ (libraries core))
+
+(library
+ (name aoc2022d13)
+ (preprocess (pps ppx_let ppx_sexp_conv))
+ (modules aoc2022d13)
+ (libraries aoc2022 core re2 aoc2022d13_packet_parser))

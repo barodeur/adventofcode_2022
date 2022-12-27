@@ -1,0 +1,10 @@
+(executables
+ (public_names aoc2022d14p1 aoc2022d14p2)
+ (names p1 p2)
+ (preprocess (pps ppx_sexp_conv))
+ (libraries aoc2022d14 core re2))
+
+(env
+ (dev
+   (flags (:standard -w -32)))
+  )

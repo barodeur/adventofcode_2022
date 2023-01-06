@@ -1,0 +1,4 @@
+(library
+ (name aoc2022d16)
+ (preprocess (pps ppx_sexp_conv ppx_fields_conv ppx_hash ppx_compare))
+ (libraries aoc2022 core re2))

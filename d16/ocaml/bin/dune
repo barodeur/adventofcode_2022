@@ -1,0 +1,5 @@
+(executables
+ (public_names aoc2022d16p1 aoc2022d16p2)
+ (names p1 p2)
+ (preprocess (pps ppx_sexp_conv ppx_fields_conv ppx_hash ppx_compare))
+ (libraries aoc2022d16 core re2))
